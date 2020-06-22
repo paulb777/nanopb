@@ -12,6 +12,13 @@ let package = Package(
         .watchOS(.v2)
     ],
 
+  products: [
+    .library(
+      name: "nanopb",
+      targets: ["nanopb"]
+    )
+  ],
+
   targets: [
     .target(
       name: "nanopb",
